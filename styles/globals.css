@@ -6,12 +6,15 @@
 
 @layer components {
 	.btn {
-		@apply transition duration-700 py-4 px-8 tracking-widest text-xl font-secondary shadow-lg rounded-md font-bold text-lightblue
+		@apply transition duration-700 py-2 px-4 md:py-3 md:px-4 font-medium tracking-widest text-xl md:text-3xl font-secondary shadow-lg rounded-md  text-white hover:bg-opacity-70;
 	}
-    .btn-secondary {
-    @apply bg-red
-    }
-    .btn-primary {
-    @apply bg-primary
+	.btn-secondary {
+		@apply bg-red;
+	}
+	.btn-primary {
+		@apply bg-primary;
+	}
+    .landing {
+        @apply grid lg:grid-cols-2 place-items-center h-full max-w-7xl mx-auto font-primary text-center
     }
 }

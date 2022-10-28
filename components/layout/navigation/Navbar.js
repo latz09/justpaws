@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import { RiMenu3Fill, RiCloseLine } from 'react-icons/ri';
 import { useState } from 'react';
-import { MdHouseSiding } from 'react-icons/md';
+import dog from '../../../public/images/logo.png';
+import Image from 'next/image';
+
 import { navLinks } from '../../../data/navLinks';
+import { FaPaw } from 'react-icons/fa';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -12,16 +15,16 @@ const Navbar = () => {
 
 	return (
 		<div className='shadow-md w-full  top-0 left-0 z-10'>
-			<div className='bg-customColor'>
-				<div className='max-w-7xl mx-auto flex items-center justify-between py-4 md:px-10 px-7 text-white tracking-widest'>
+			<div className='bg-gradient-to-r from-white  to-primary'>
+				<div className='max-w-7xl mx-auto flex items-center justify-between py-4 md:px-10 px-7   font-secondary tracking-widest'>
 					<Link href={'/'}>
-						<button
-							className='hover:text-customColor duration-700 text-4xl cursor-pointer'
+						<a
+							className='text-primary hover:text-red p-1 md:p-2 duration-700 text-5xl cursor-pointer'
 							onClick={closeMenu}
 							aria-label='Navigate Home'
 						>
-							<MdHouseSiding />{' '}
-						</button>
+							<FaPaw />{' '}
+						</a>
 					</Link>
 
 					<div
@@ -57,7 +60,7 @@ const Navbar = () => {
 								onClick={() => setOpen(!open)}
 							>
 								<Link href={link.link}>
-									<a className='hover:text-customColor duration-700 border-b pb-2 md:border-none md:pb-0'>
+									<a className='text-white font-bold hover:text-lightblue transition duration-700'>
 										{link.name}
 									</a>
 								</Link>

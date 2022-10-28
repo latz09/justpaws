@@ -1,30 +1,40 @@
 import Link from 'next/link';
+import { FaPaw } from 'react-icons/fa';
 
-// export const ButtonLink = ({ href, title, type }) => {
-// 	<>
-// 		{type === 'primary' ? (
-// 			<Link href={href}>
-// 				<a className='btn btn-primary'>{title}</a>  </Link>
+export const ButtonLink = ({ href, title, type }) => {
+	let styles;
+	switch (type) {
+		case 'secondary':
+			styles = 'btn btn-secondary';
+			break;
+		case 'withpaw':
+			styles = 'btn btn-primary'
+			break;
 
-//                 </>
+		default:
+			styles = 'btn btn-primary';
+	}
 
-export const ButtonLink = ({ href, title, color }) => {
 	return (
 		<>
 			<div className='text-white'>
-				{color === 'secondary' ? (
-					<div>
-						<Link href={href}>
-							<a className='btn btn-secondary'>{title}</a>
-						</Link>
-					</div>
-				) : (
-					<div>
-						<Link href={href}>
-							<a className='btn btn-primary'>{title}</a>
-						</Link>
-					</div>
-				)}
+				<div className='grid place-items-end'>
+					<Link href={href}>
+						<a
+							className={`${styles}  ${
+								type === 'withpaw' && 'flex space-x-4 place-items-center'
+							} `}
+						>
+							<span> {title}</span>
+							{type === 'withpaw' && (
+								<span>
+									{' '}
+									<FaPaw />{' '}
+								</span>
+							)}
+						</a>
+					</Link>
+				</div>
 			</div>
 		</>
 	);

@@ -1,19 +1,16 @@
 export const navLinks = [
     {
-        name: 'Page One',
+        name: 'Our Story',
         link: '/',
     },
     {
-        name: 'Page Two',
+        name: 'Services',
         link: '/',
     },
     {
-        name: 'Page Three',
+        name: 'Contact',
         link: '/',
     },
-    {
-        name: 'Page Four',
-        link: '/',
-    }, 
+ 
 
 ];

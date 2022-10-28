@@ -11,8 +11,9 @@ module.exports = {
 			secondary: ['quicksand', 'sans-serif'],
 		},
 		colors: {
-			primary: '#0961C3',
-			red: '#9C2F07',
+			//primary original: #0961C3
+			primary: '#0C71E4',
+			red: '#EF1313',
 			lightblue: '#C2dfe3',
 			darkblue: '#3D3D63',
 			dark: '#141D28',
