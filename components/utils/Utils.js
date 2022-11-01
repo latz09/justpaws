@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaPaw } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export const ButtonLink = ({ href, title, type }) => {
 	let styles;
@@ -8,7 +9,7 @@ export const ButtonLink = ({ href, title, type }) => {
 			styles = 'btn btn-secondary';
 			break;
 		case 'withpaw':
-			styles = 'btn btn-primary'
+			styles = 'btn btn-primary';
 			break;
 
 		default:
@@ -27,10 +28,22 @@ export const ButtonLink = ({ href, title, type }) => {
 						>
 							<span> {title}</span>
 							{type === 'withpaw' && (
-								<span>
+								<motion.div
+									initial={{ scale: 1 }}
+									animate={{ scale: [1.1, 1] }}
+									transition={{
+										
+										type: 'spring',
+										stiffness: 80,
+										// damping: 80,
+										repeat: Infinity,
+										repeatType: 'reverse'
+									
+									}}
+								>
 									{' '}
 									<FaPaw />{' '}
-								</span>
+								</motion.div>
 							)}
 						</a>
 					</Link>

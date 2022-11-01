@@ -6,7 +6,7 @@
 
 @layer components {
 	.btn {
-		@apply transition duration-700 py-2 px-4 md:py-3 md:px-4 font-medium tracking-widest text-xl md:text-3xl font-secondary shadow-lg rounded-md  text-white hover:bg-opacity-70;
+		@apply transition duration-700 py-2 px-4 md:py-3 md:px-4 font-medium tracking-widest text-xl md:text-3xl font-secondary shadow-lg  text-white hover:bg-opacity-70;
 	}
 	.btn-secondary {
 		@apply bg-red;
@@ -14,7 +14,10 @@
 	.btn-primary {
 		@apply bg-primary;
 	}
-    .landing {
-        @apply grid lg:grid-cols-2 place-items-center h-full max-w-7xl mx-auto font-primary text-center
-    }
+	.landing {
+		@apply max-w-7xl mx-auto font-primary text-center flex items-center justify-end h-full;
+	}
+	.footer {
+		@apply max-w-7xl mx-auto py-12 border-t border-primary border-opacity-70 px-2 text-lg text-primary tracking-wider;
+	}
 }
