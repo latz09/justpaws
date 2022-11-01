@@ -2,10 +2,12 @@ import Image from 'next/image';
 import dog from '../../../public/images/hero-dog-shower.jpg';
 import Services from '../../services/ServiceModalContainer';
 import HeroSlogan from '../Headers/HeroSlogan';
-import { motion } from 'framer-motion';
+import { useState } from "react";
 import ServiceModalContainer from '../../services/ServiceModalContainer';
+import ServicesModal from '../../services/ServicesModal';
 
 const LandingHero = () => {
+	const [modalIsOpen, setModalIsOpen] = useState(false);
 	return (
 		<div className='relative w-full h-[85vh] '>
 			<Image
@@ -23,11 +25,13 @@ const LandingHero = () => {
 					<div className='landing  order-1 lg:col-span-2 lg:order-2'>
 						<HeroSlogan />
 					</div>
-					<div className='place-self-center order-2 lg:order-1 w-full'>
+					<div className='md:place-self-center order-2 lg:order-1 w-full'>
 						<ServiceModalContainer />
 					</div>
 				</div>
 			</div>
+			{/* <ServicesModal /> */}
+			
 		</div>
 	);
 };

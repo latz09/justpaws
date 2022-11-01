@@ -2,24 +2,24 @@ export const pricingAndSizes = [
 	{
 		id: 0,
 		size: 'Toy',
-		sizeDescription: '10 Pounds or less',
+		sizeDescription: '< 10 Pounds',
 		prices: [
 			{
-				id: st0,
+				id: 'st0',
 				service: 'Nails',
 				description: '',
 				price: '$10.00',
 				priceWithTax: '$10.76',
 			},
 			{
-				id: st1,
+				id: 'st1',
 				service: 'Bath and Brush',
 				description: 'Includes Nails and Ears',
 				price: '$25.00',
 				priceWithTax: '$26.91',
 			},
 			{
-				id: st2,
+				id: 'st2',
 				service: 'Grooming',
 				description: 'Includes Bath, Nails and Ears',
 				price: '$40.00',
@@ -33,21 +33,21 @@ export const pricingAndSizes = [
 		sizeDescription: '11-25 Pounds',
 		prices: [
 			{
-				id: ss0,
+				id: 'ss0',
 				service: 'Nails',
 				description: '',
 				price: '$10.00',
 				priceWithTax: '$10.76',
 			},
 			{
-				id: ss1,
+				id: 'ss1',
 				service: 'Bath and Brush',
 				description: 'Includes Nails and Ears',
 				price: '$25.00',
 				priceWithTax: '$26.91',
 			},
 			{
-				id: ss2,
+				id: 'ss2',
 				service: 'Grooming',
 				description: 'Includes Bath, Nails and Ears',
 				price: '$50.00',
@@ -61,21 +61,21 @@ export const pricingAndSizes = [
 		sizeDescription: '26-50 Pounds',
 		prices: [
 			{
-				id: sm0,
+				id: 'sm0',
 				service: 'Nails',
 				description: '',
 				price: '$10.00',
 				priceWithTax: '$10.76',
 			},
 			{
-				id: sm1,
+				id: 'sm1',
 				service: 'Bath and Brush',
 				description: 'Includes Nails and Ears',
 				price: '$45.00',
 				priceWithTax: '$48.43',
 			},
 			{
-				id: sm2,
+				id: 'sm2',
 				service: 'Grooming',
 				description: 'Includes Bath, Nails and Ears',
 				price: '$60.00',
@@ -89,21 +89,21 @@ export const pricingAndSizes = [
 		sizeDescription: '51-79 Pounds',
 		prices: [
 			{
-				id: sl0,
+				id: 'sl0',
 				service: 'Nails',
 				description: '',
 				price: '$10.00',
 				priceWithTax: '$10.76',
 			},
 			{
-				id: sl1,
+				id: 'sl1',
 				service: 'Bath and Brush',
 				description: 'Includes Nails and Ears',
 				price: '$55.00',
 				priceWithTax: '$59.19',
 			},
 			{
-				id: sl2,
+				id: 'sl2',
 				service: 'Grooming',
 				description: 'Includes Bath, Nails and Ears',
 				price: '$70.00',
@@ -112,26 +112,26 @@ export const pricingAndSizes = [
 		],
 	},
 	{
-		id: 0,
+		id: 4,
 		size: 'Giant',
-		sizeDescription: '80 Pounds and more',
+		sizeDescription: '> 80 Pounds',
 		prices: [
 			{
-				id: sg0,
+				id: 'sg0',
 				service: 'Nails',
 				description: '',
 				price: '$10.00',
 				priceWithTax: '$10.76',
 			},
 			{
-				id: sg1,
+				id: 'sg1',
 				service: 'Bath and Brush',
 				description: 'Includes Nails and Ears',
 				price: '$65',
 				priceWithTax: '$69.95',
 			},
 			{
-				id: sg2,
+				id: 'sg2',
 				service: 'Grooming',
 				description: 'Includes Bath, Nails and Ears',
 				price: '$90.00',
