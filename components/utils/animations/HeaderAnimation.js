@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { BsArrowDown } from 'react-icons/bs';
 
 const HeaderAnimation = ({ word }) => {
-
 	const letters = word.split('');
 
 	const container = {
@@ -21,7 +20,7 @@ const HeaderAnimation = ({ word }) => {
 		show: {
 			opacity: [1, 0.6, 1],
 			// y: [5, -5, 5],
-			transition: { ease: 'easeInOut', repeat: 3, repeatDelay: .6 },
+			transition: { ease: 'easeInOut', repeat: 3, repeatDelay: 0.6 },
 		},
 	};
 
@@ -42,9 +41,7 @@ const HeaderAnimation = ({ word }) => {
 						{letter}
 					</motion.p>
 				))}
-			
 			</motion.div>{' '}
-            
 		</div>
 	);
 };
