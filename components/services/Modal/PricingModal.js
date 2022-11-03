@@ -1,6 +1,6 @@
 import { AiOutlineDash } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-import LandingServiceHeader from '../LandingServiceHeader';
+import LandingServiceHeader from '../servicePage/LandingServiceHeader';
 
 const PricingModal = ({ setModalIsOpen }) => {
 	return (

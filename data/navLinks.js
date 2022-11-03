@@ -4,8 +4,8 @@ export const navLinks = [
         link: '/',
     },
     {
-        name: 'Services',
-        link: '/',
+        name: 'Services and Pricing',
+        link: '/Just-Paws-Services',
     },
     {
         name: 'Contact',
