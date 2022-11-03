@@ -5,12 +5,17 @@ const PricingDescription = ({ data }) => {
 		<div className='my-5 tracking-widest'>
 			{data.map((item) => (
 				<div key={item.id} className='grid gap-4'>
-					<div className='flex space-x-4 items-center text-xl md:text-3xl'>
+					<motion.div
+						className='flex space-x-4 items-center text-xl md:text-3xl'
+						initial={{  opacity: 0 }}
+						animate={{  opacity: 1 }}
+						transition={{ delay: 0.2, duration: 0.5 }}
+					>
 						<span>{item.size}</span>
 						<span className='text-base md:text-lg self-end'>
 							{item.sizeDescription}
 						</span>
-					</div>
+					</motion.div>
 
 					{item.prices.map((priceOption) => (
 						<div
