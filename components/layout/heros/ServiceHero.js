@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const ServiceHero = ({ setModalIsOpen }) => {
 	return (
-		<div className='relative w-full h-[45vh] '>
+		<div className='relative w-full h-[30vh] lg:h-[45vh] '>
 			<Image
 				src={dog}
 				alt=''
