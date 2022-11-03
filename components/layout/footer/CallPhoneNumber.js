@@ -2,7 +2,7 @@ import { FaPaw } from "react-icons/fa";
 
 const CallPhoneNumber = () => {
 	return (
-		<div>
+		<div className="text-center grid gap-2">
 			{' '}
 			<p>For consultation or to make an appointment</p>
 			<div className='flex items-center justify-center space-x-4 tracking-normal font-semibold '>

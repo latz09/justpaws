@@ -5,9 +5,9 @@ import Hours from './Hours';
 
 const Footer = () => {
 	return (
-		<div className='grid grid-cols-3 gap-2 items-center footer'>
+		<div className='grid gap-8 place-items-center lg:grid-cols-3 lg:gap-2 items-center footer'>
 			<Hours />
-			<div className="grid gap-4 self-start">
+			<div className="grid gap-8 place-items-center lg:gap-4 lg:self-start">
 				<CallPhoneNumber />
 				<BusinessDetails />
 			</div>
