@@ -21,6 +21,10 @@
 		@apply max-w-7xl mx-auto py-12 border-t border-primary border-opacity-70 px-2 text-lg text-primary tracking-wider;
 	}
 	.item-selection {
-		@apply  mx-auto p-4 grid grid-cols-2 lg:grid-cols-3 gap-4  text-white text-lg font-semibold tracking-wider ;
+		@apply  mx-auto py-4 grid  border text-white text-lg font-semibold tracking-wider ;
+	}
+	.sizes {
+		@apply border-b-2 backdrop-blur-sm bg-primary/80 border-primary border-opacity-70 hover:border-opacity-100 hover:bg-primary hover:scale-105 transition duration-500  hover:shadow-md border px-2 py-3 cursor-pointer text-3xl font-bold;
+
 	}
 }

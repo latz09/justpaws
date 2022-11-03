@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import dog from '../../../public/images/hero-dog-shower.jpg';
-import Services from '../../services/ServiceModalContainer';
+
 import HeroSlogan from '../Headers/HeroSlogan';
-import { useState } from "react";
-import ServiceModalContainer from '../../services/ServiceModalContainer';
-import ServicesModal from '../../services/ServicesModal';
+
+import ServiceModalContainer from '../../services/Modal/ServiceModalContainer';
 
 const LandingHero = () => {
-	const [modalIsOpen, setModalIsOpen] = useState(false);
 	return (
 		<div className='relative w-full h-[85vh] '>
 			<Image
@@ -21,17 +19,17 @@ const LandingHero = () => {
 			/>
 
 			<div className='relative h-full bg-black bg-opacity-70 '>
-				<div className='h-full grid place-items-end lg:grid-cols-3 lg:place-items-center max-w-7xl mx-auto'>
-					<div className='landing  order-1 lg:col-span-2 lg:order-2'>
+				<div className=' place-items-center  h-full grid  lg:grid-cols-3 lg:place-items-center max-w-7xl mx-auto'>
+					<div className='landing self-end grid order-1 lg:col-span-2 lg:order-2 z-10 flex-shrink'>
 						<HeroSlogan />
 					</div>
-					<div className='md:place-self-center order-2 lg:order-1 w-full'>
-						<ServiceModalContainer />
+					<div className='md:place-self-center order-2 lg:order-1 w-full h-full z-20 grow'>
+						<div className="grid items-end md:place-items-center h-full">
+							<ServiceModalContainer />
+						</div>
 					</div>
 				</div>
 			</div>
-			{/* <ServicesModal /> */}
-			
 		</div>
 	);
 };
