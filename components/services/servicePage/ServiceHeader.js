@@ -1,9 +1,9 @@
 import LandingServiceHeader from './LandingServiceHeader';
 import { Heading3 } from '../../utils/Typography';
-
+import { motion } from 'framer-motion';
 import { BsArrowBarRight } from 'react-icons/bs';
 
-const ServiceHeader = ({ setModalIsOpen }) => {
+const ServiceHeader = ({ setModalIsOpen, modalIsOpen }) => {
 	return (
 		<>
 			<div
@@ -16,15 +16,22 @@ const ServiceHeader = ({ setModalIsOpen }) => {
 					<span className=''>
 						<LandingServiceHeader />
 					</span>
-					<span className='border border-lightblue  rounded-full w-full grid place-items-end '>
+					<motion.div
+						className='border border-lightblue  rounded-full w-full grid place-items-end '
+						initial={{ scale: 1 }}
+						animate={{ scale: 1.015 }}
+						transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
+					>
 						<span className='px-4 py-2 text-primary  text-xl'>
 							<BsArrowBarRight />
 						</span>
-					</span>
+					</motion.div>
 				</div>
 			</div>
 			<div className='text-center  text-primary'>
-				<div className="text-5xl tracking-widest lg:text-7xl">Services And Pricing</div>
+				<div className='text-5xl tracking-widest lg:text-7xl'>
+					Services And Pricing
+				</div>
 			</div>
 		</>
 	);

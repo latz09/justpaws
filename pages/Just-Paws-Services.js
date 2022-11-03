@@ -14,7 +14,7 @@ const JustPawsServices = () => {
 
 	return (
 		<div className=''>
-			<ServiceHero setModalIsOpen={setModalIsOpen} />
+			<ServiceHero setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen} />
 			<div className='grid lg:grid-cols-3 max-w-7xl mx-auto my-12'>
 				<div className='lg:hidden py-8 px-4'>
 					<div className='text-5xl font-primary py-8'>Nails</div>

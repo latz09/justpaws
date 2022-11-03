@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import dog from '../../../public/images/trim.jpg';
 import ServiceHeader from '../../services/servicePage/ServiceHeader';
+import { motion } from 'framer-motion';
 
 const ServiceHero = ({ setModalIsOpen }) => {
 	return (
@@ -16,9 +17,14 @@ const ServiceHero = ({ setModalIsOpen }) => {
 			/>
 
 			<div className='relative h-full bg-black bg-opacity-80 '>
-				<div className='grid place-items-center border h-full'>
+				<motion.div
+					className='grid place-items-center h-full'
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{delay: .4, duration: 1}}
+				>
 					<ServiceHeader setModalIsOpen={setModalIsOpen} />
-				</div>{' '}
+				</motion.div>{' '}
 			</div>
 		</div>
 	);
