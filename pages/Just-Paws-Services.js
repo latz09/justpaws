@@ -15,25 +15,30 @@ const JustPawsServices = () => {
 	return (
 		<div className=''>
 			<ServiceHero setModalIsOpen={setModalIsOpen} modalIsOpen={modalIsOpen} />
-			<div className='grid lg:grid-cols-3 max-w-7xl mx-auto my-12'>
-				<div className='lg:hidden py-8 px-4'>
-					<div className='text-5xl font-primary py-8'>Nails</div>
+			<div className='grid lg:grid-cols-3 max-w-7xl mx-auto  lg:my-12'>
+				<div className='lg:hidden pb-4  px-4 lg:py-8 lg:pb-0'>
+					<div className='text-3xl lg:text-5xl font-primary py-8'>Nails</div>
 					<Nails />
 				</div>
 
 				<div className='lg:col-span-2 p-4 grid gap-12'>
 					<div className='grid gap-4'>
-						<div className='text-5xl font-primary '> Bath and brush</div>
+						<div className='text-3xl lg:text-5xl font-primary '>
+							{' '}
+							Bath and brush
+						</div>
 						<PricingComponent data={pricingAndSizes} position={1} />
 					</div>
 					<div className='grid gap-4 mb-8'>
-						<span className='text-5xl font-primary'> Grooming</span>
+						<span className='text-3xl lg:text-5xl font-primary'> Grooming</span>
 						<PricingComponent data={pricingAndSizes} position={2} />
 					</div>
 				</div>
 				<div className='hidden lg:block lg:ml-20'>
 					<div className='h-1/3'>
-						<div className='text-5xl font-primary py-8 text-center'>Nails</div>
+						<div className='text-3xl lg:text-5xl font-primary py-8 text-center'>
+							Nails
+						</div>
 						<Nails />
 					</div>
 					<div className='hidden lg:grid gap-12  text-primary text-xl font-normal '>

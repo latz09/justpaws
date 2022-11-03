@@ -22,14 +22,14 @@ const ServiceHeader = ({ setModalIsOpen, modalIsOpen }) => {
 						animate={{ scale: 1.015 }}
 						transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
 					>
-						<span className='px-4 py-2 text-primary  text-xl'>
+						<span className='px-2 py-1 md:px-4 md:py-2 text-primary  text-xl'>
 							<BsArrowBarRight />
 						</span>
 					</motion.div>
 				</div>
 			</div>
 			<div className='text-center  text-primary'>
-				<div className='text-5xl tracking-widest lg:text-7xl'>
+				<div className='text-4xl tracking-wide sm:text-5xl md:tracking-widest lg:text-7xl'>
 					Services And Pricing
 				</div>
 			</div>
