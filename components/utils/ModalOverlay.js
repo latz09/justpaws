@@ -7,7 +7,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 			x: 1,
 			opacity: 1,
 			transition: {
-				duration: 0.7,
+				duration: 0.4,
 				delay: 0.02,
 			},
 		},
@@ -25,7 +25,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 				initial='hidden'
 				animate='visible'
 				exit='exit'
-				className='fixed top-0 left-0 w-full h-full  z-10 backdrop-blur'
+				className='fixed top-0 left-0 w-full h-full  z-10 bg-black bg-opacity-80 backdrop-blur'
 			>
 				<div
 					className='text-3xl	grid place-items-center text-white font-semibold tracking-widest p-4 cursor-pointer'
