@@ -4,7 +4,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 	const backDropVariant = {
 		hidden: { x: '-100vw', opacity: 0 },
 		visible: {
-			x: 1,
+			x: 0,
 			opacity: 1,
 			transition: {
 				duration: 0.4,

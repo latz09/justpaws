@@ -3,11 +3,14 @@ import { RiMenu3Fill, RiCloseLine } from 'react-icons/ri';
 import { useState } from 'react';
 import { navLinks } from '../../../data/navLinks';
 import { FaPaw } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const [animate, setAnimate] = useState(false);
 	const closeMenu = () => {
 		open && setOpen(false);
+		setAnimate(!animate);
 	};
 
 	// const logoVariant = {
@@ -20,13 +23,15 @@ const Navbar = () => {
 			<div className='bg-primary bg-opacity-80'>
 				<div className='max-w-7xl mx-auto flex items-center justify-between py-3 md:px-10 px-7   font-secondary tracking-widest'>
 					<Link href={'/'}>
-						<div
-							className='text-lightblue hover:scale-110 hover:opacity-30 p-1 md:p-2 duration-700 text-5xl cursor-pointer'
+						<motion.div
+							className='text-lightblue  p-1 md:p-2 duration-700 text-5xl cursor-pointer'
 							onClick={closeMenu}
 							aria-label='Navigate Home'
+							initial={{ rotate: 180 }}
+							animate={animate === true ? { rotate: 360 } : { rotate: 360 }}
 						>
 							<FaPaw />
-						</div>
+						</motion.div>
 					</Link>
 
 					<div
@@ -51,7 +56,9 @@ const Navbar = () => {
 					</div>
 
 					<div
-						className={`${open && 'bg-primary bg-opacity-30 backdrop-blur-sm'} border-b-2 border-primary md:border-none md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-700 ease-in ${
+						className={`${
+							open && 'bg-primary bg-opacity-30 backdrop-blur-sm'
+						} border-b-2 border-primary md:border-none md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-700 ease-in ${
 							open ? 'top-20' : 'top-[-490px]'
 						}`}
 					>
