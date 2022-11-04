@@ -2,9 +2,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const ModalOverlay = ({ children, setModalIsOpen }) => {
 	const backDropVariant = {
-		hidden: { x: '-100vw', opacity: 0 },
+		hidden: { opacity: 0 },
 		visible: {
-			x: 0,
+			
 			opacity: 1,
 			transition: {
 				duration: 0.4,
@@ -24,7 +24,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 				variants={backDropVariant}
 				initial='hidden'
 				animate='visible'
-				exit='exit'wwwwwwwwwwwwwwwww
+				exit='exit'
 				className='fixed top-0 left-0 w-full h-full  z-10 bg-black bg-opacity-80 backdrop-blur'
 			>
 				<div

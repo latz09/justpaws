@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const Comment = ({ text, name }) => {
 	return (
-		<div className='font-primary font-normal tracking-wider p-4 grid gap-2 md:gap-4 mx-4 place-items-end '>
-			<div className='flex items-center space-x-4'>
+		<div className='font-primary font-normal tracking-wider p-4 grid gap-2 md:gap-4 mx-4 place-items-end  border-black'>
+			<div className='flex justify-between items-center space-x-3 md:space-x-4 w-full '>
 				<motion.div
 					initial={{ scale: 1 }}
 					animate={{ scale: 1.1 }}
@@ -13,9 +13,12 @@ const Comment = ({ text, name }) => {
 						repeat: Infinity,
 						repeatType: 'reverse',
 					}}
-					className=' text-primary text-xl'
+					className=' text-primary text-xl justify-self-start'
 				>
-					<BsChatQuote />{' '}
+					<div className="">
+						{' '}
+						<BsChatQuote />{' '}
+					</div>
 				</motion.div>
 				<span className='text-right'>{text}</span>
 			</div>

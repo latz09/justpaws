@@ -36,7 +36,7 @@ const Navbar = () => {
 
 					<div
 						onClick={() => setOpen(!open)}
-						className='text-3xl  cursor-pointer md:hidden'
+						className='text-3xl text-lightblue  cursor-pointer md:hidden'
 					>
 						{!open ? (
 							<button
