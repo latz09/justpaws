@@ -1,11 +1,11 @@
 import Comment from './Comment';
-import { comments } from '../../data/Comments';
+import { comments } from '../../data/comments';
 import { motion } from 'framer-motion';
 const TestimonialComponent = () => {
 	const firstFourComments = comments.slice(0, 4);
 
 	return (
-		<div className='py-20 md:py-40 grid place-items-center'>
+		<div className='py-20 md:py-32 grid place-items-center'>
 			<motion.h1
 				className='text-4xl'
 				initial={{ opacity: 1 }}
