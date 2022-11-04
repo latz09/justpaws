@@ -3,7 +3,7 @@ export const Heading1 = ({ text }) => {
 };
 export const Heading2 = ({ text }) => {
 	return (
-		<h1 className='text-[110px] font-bold tracking-wider '>
+		<h1 className='text-[100px] font-bold tracking-wider '>
 			{text}
 		</h1>
 	);

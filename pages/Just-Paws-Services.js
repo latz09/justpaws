@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { pricingAndSizes } from '../data/pricingAndSizes';
 import ModalOverlay from '../components/utils/ModalOverlay';
 import ModalSections from '../components/services/Modal/ModalSections';
-import ServiceHeader from '../components/services/servicePage/ServiceHeader';
+
 import Nails from '../components/services/servicePage/Nails';
 import PricingComponent from '../components/services/servicePage/PricingComponent';
 import CallPhoneNumber from '../components/layout/footer/CallPhoneNumber';
 import BusinessDetails from '../components/layout/footer/BusinessDetails';
 import ServiceHero from '../components/layout/heros/ServiceHero';
-import { FiScissors } from 'react-icons/fi';
+
 const JustPawsServices = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 

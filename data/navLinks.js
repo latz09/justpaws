@@ -1,7 +1,7 @@
 export const navLinks = [
     {
         name: 'Our Story',
-        link: '/',
+        link: '/our-full-story',
     },
     {
         name: 'Services and Pricing',
@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
         name: 'Contact',
-        link: '/',
+        link: '/contact-us',
     },
  
 
