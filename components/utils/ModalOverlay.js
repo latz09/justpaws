@@ -24,7 +24,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 				variants={backDropVariant}
 				initial='hidden'
 				animate='visible'
-				exit='exit'
+				exit='exit'wwwwwwwwwwwwwwwww
 				className='fixed top-0 left-0 w-full h-full  z-10 bg-black bg-opacity-80 backdrop-blur'
 			>
 				<div

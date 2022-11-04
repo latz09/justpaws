@@ -20,15 +20,15 @@ const Navbar = () => {
 
 	return (
 		<div className='shadow-md w-full  top-0 left-0 z-10'>
-			<div className='bg-primary bg-opacity-80'>
+			<div className='bg-primary '>
 				<div className='max-w-7xl mx-auto flex items-center justify-between py-3 md:px-10 px-7   font-secondary tracking-widest'>
 					<Link href={'/'}>
 						<motion.div
 							className='text-lightblue  p-1 md:p-2 duration-700 text-5xl cursor-pointer'
 							onClick={closeMenu}
 							aria-label='Navigate Home'
-							initial={{ rotate: 180 }}
-							animate={animate === true ? { rotate: 360 } : { rotate: 360 }}
+							initial={{ scale: 1 }}
+							whileHover={{ scale: 1.2 }}
 						>
 							<FaPaw />
 						</motion.div>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
 					<div
 						className={`${
-							open && 'bg-primary bg-opacity-30 backdrop-blur-sm'
+							open && 'bg-primary/80 backdrop-blur-sm'
 						} border-b-2 border-primary md:border-none md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-700 ease-in ${
 							open ? 'top-20' : 'top-[-490px]'
 						}`}
@@ -70,7 +70,13 @@ const Navbar = () => {
 							>
 								<Link href={link.link}>
 									<a className='text-white font-bold hover:text-lightblue transition duration-700'>
-										{link.name}
+										<motion.div
+											initial={{ scale: 0, opacity: 0 }}
+											whileInView={{ scale: 1, opacity: 1 }}
+											transition={{  duration: 0.5 }}
+										>
+											{link.name}
+										</motion.div>
 									</a>
 								</Link>
 							</div>
