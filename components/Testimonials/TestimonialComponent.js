@@ -5,11 +5,11 @@ const TestimonialComponent = () => {
 	const firstFourComments = comments.slice(0, 4);
 
 	return (
-		<div className='py-20 md:py-32 grid place-items-center'>
+		<div className=' grid place-items-center'>
 			<motion.h1
 				className='text-4xl'
-				initial={{ opacity: 1 }}
-				whileInView={{ opacity: 0 }}
+				initial={{ opacity: 1, scale: 1 }}
+				whileInView={{ opacity: 0, scale: 0 }}
 				transition={{ delay: 1, duration: 2 }}
 			>
 				What our clients say about us...
@@ -19,7 +19,7 @@ const TestimonialComponent = () => {
 				className='max-w-7xl hidde mx-auto flex flex-wrap flex-auto space-y-2'
 				initial={{ opacity: 0, scale: .2 }}
 				whileInView={{ opacity: 1, scale: 1 }}
-				transition={{ delay: 1.6, duration: 1.3 }}
+				transition={{ delay: 1.2, duration: 1.6 }}
 			>
 				{firstFourComments.map((comment) => (
 					<div key={comment.id} className='w-full md:w-1/2'>
