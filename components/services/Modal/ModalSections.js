@@ -32,7 +32,7 @@ const ModalSections = ({ data, setModalIsOpen }) => {
 							className='grid grid-cols-2  gap-5'
 							initial={{ scale: 0.2, opacity: 0 }}
 							animate={{ scale: 1, opacity: 1 }}
-							transition={{ duration: 2  }}
+							transition={{ duration: 1.3  }}
 							exit={{ scale: 0, opacity: 0, transition: { duration: 1, delay: .2 } }}
 						>
 							{data.map((size) => (

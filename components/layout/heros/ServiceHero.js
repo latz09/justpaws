@@ -16,7 +16,7 @@ const ServiceHero = ({ setModalIsOpen }) => {
 				placeholder='blur'
 			/>
 
-			<div className='relative h-full bg-black bg-opacity-70 '>
+			<motion.div className='relative h-full  bg-opacity-50 bg-black' initial={{}} animate={{}}>
 				<motion.div
 					className='grid place-items-center h-full'
 					initial={{ opacity: 0 }}
@@ -25,7 +25,7 @@ const ServiceHero = ({ setModalIsOpen }) => {
 				>
 					<ServiceHeader setModalIsOpen={setModalIsOpen} />
 				</motion.div>{' '}
-			</div>
+			</motion.div>
 		</div>
 	);
 };
