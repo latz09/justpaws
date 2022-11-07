@@ -18,7 +18,7 @@ const ServiceHeader = ({ setModalIsOpen, modalIsOpen }) => {
 						<span className=' text-white'>Pricing</span>{' '}
 					</div>
 					<motion.div
-						className='border border-lightblue  rounded-full w-full grid place-items-end backdrop-blur '
+						className='border border-lightblue  rounded-full w-full grid place-items-end  '
 						initial={{ scale: 1 }}
 						animate={{ scale: 1.015 }}
 						transition={{
