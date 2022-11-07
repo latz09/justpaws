@@ -23,7 +23,7 @@ const TestimonialsHero = () => {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.9, duration: 1.6,}}
 					>
-						What Our Clients Are Saying About Us
+						What Our Clients Say About Us
 					</motion.h1>
 				</div>{' '}
 			</div>
