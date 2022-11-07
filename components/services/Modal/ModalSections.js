@@ -32,8 +32,12 @@ const ModalSections = ({ data, setModalIsOpen }) => {
 							className='grid grid-cols-2  gap-5'
 							initial={{ scale: 0.2, opacity: 0 }}
 							animate={{ scale: 1, opacity: 1 }}
-							transition={{ duration: 1.3  }}
-							exit={{ scale: 0, opacity: 0, transition: { duration: 1, delay: .2 } }}
+							transition={{ duration: 1.3 }}
+							exit={{
+								scale: 0,
+								opacity: 0,
+								transition: { duration: 1, delay: 0.2 },
+							}}
 						>
 							{data.map((size) => (
 								<div key={size.id}>
@@ -83,13 +87,17 @@ const ModalSections = ({ data, setModalIsOpen }) => {
 							tabData={tabData()}
 						/>
 					</motion.div>
-					<div
+					{/* <div
 						className='grid place-items-center py-4'
 						onClick={() => {
 							setModalIsOpen(false);
 						}}
 					>
 						<ButtonLink href={'/'} title='contact' type='withpaw' />
+					</div> */}
+					<div className='grid gap-2 text-white text-xl tracking-wide lg:flex lg:place-items-center lg:space-x-2'>
+						<span>For consultation or to make an appointment please call </span>
+						<span className='font-bold text-lightblue text-2xl'>{`651-455-0303`}</span>
 					</div>
 				</div>
 			)}

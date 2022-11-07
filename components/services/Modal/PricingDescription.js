@@ -54,7 +54,7 @@ const PricingDescription = ({ data }) => {
 						</div>
 					))}
 					<span className='italic tracking-widest font-primary '>
-						Prices above may vary depeending on the Breed, Coat, and temperment
+						Prices above may vary depending on the Breed, Coat, and temperment
 						of your dog
 					</span>
 				</div>
