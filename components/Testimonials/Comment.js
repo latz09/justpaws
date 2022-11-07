@@ -6,10 +6,10 @@ const Comment = ({ text, name }) => {
 		<div className='font-primary font-normal tracking-wider p-4 grid gap-2 md:gap-4 mx-4 place-items-end'>
 			<div className='flex justify-between items-center space-x-3 md:space-x-4 w-full '>
 				<motion.div
-					initial={{ scale: 1 }}
-					animate={{ scale: 1.1 }}
+					initial={{ scale: .98 }}
+					animate={{ scale: 1.19 }}
 					transition={{
-						duration: 0.8,
+						duration: 1,
 						repeat: Infinity,
 						repeatType: 'reverse',
 					}}
@@ -20,7 +20,7 @@ const Comment = ({ text, name }) => {
 						<BsChatQuote />{' '}
 					</div>
 				</motion.div>
-				<span className='text-right'>{text}</span>
+				<span className='pl-4 md:pl-2 md:text-right'>{text}</span>
 			</div>
 			<div className='place-self-end text-primary font-bold'>-{name}</div>
 		</div>

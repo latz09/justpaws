@@ -18,7 +18,7 @@ const HeroSlogan = () => {
 				</span>
 			</div>
 			<div className=' my-4 md:my-7 text-center'>
-				<ButtonLink title='Contact' href={'/contact-us'} type='withpaw' /> 
+				<ButtonLink title='Services' href={'/Just-Paws-Services'} type='withpaw' /> 
 			</div>
 		</div>
 	);

@@ -19,7 +19,7 @@ const TestimonialComponent = () => {
 					className='max-w-7xl hidde mx-auto flex flex-wrap flex-auto space-y-2'
 					initial={{ opacity: 0, scale: 0.2 }}
 					whileInView={{ opacity: 1, scale: 1, once: true }}
-					transition={{ delay: 1, duration: 1.4 }}
+					transition={{ delay: .4, duration: 1.6 }}
 				
 				>
 					{firstFourComments.map((comment) => (

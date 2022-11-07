@@ -25,7 +25,7 @@ const StoryContainer = () => {
 			<div>
 				
 				{paragraphs.map((paragraph) => (
-					<div key={paragraph.id} className='p-4'>
+					<div key={paragraph.id} className='py-4 px-2 md:px-0'>
 						<Paragraph text={paragraph.text} />
 					</div>
 				))}

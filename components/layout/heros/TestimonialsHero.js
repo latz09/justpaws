@@ -17,7 +17,7 @@ const TestimonialsHero = () => {
 			<div className='relative h-full '>
 				<div className='grid place-items-center h-full bg-black/60'>
 					<h1 className='text-3xl lg:text-7xl text-white font-primar font-normal tracking-wider px-2'>
-						What Our Clients are Saying About Us
+						What Our Clients Are Saying About Us
 					</h1>
 				</div>{' '}
 			</div>

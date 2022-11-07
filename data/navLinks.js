@@ -8,8 +8,8 @@ export const navLinks = [
         link: '/Just-Paws-Services',
     },
     {
-        name: 'Contact',
-        link: '/contact-us',
+        name: 'Testimonials',
+        link: '/client-comments',
     },
  
 

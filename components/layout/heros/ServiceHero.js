@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dog from '../../../public/images/trim.jpg';
+import dog from '../../../public/images/cubeism.jpg';
 import ServiceHeader from '../../services/servicePage/ServiceHeader';
 import { motion } from 'framer-motion';
 
@@ -12,11 +12,11 @@ const ServiceHero = ({ setModalIsOpen }) => {
 				priority='true'
 				layout='fill'
 				objectFit='cover'
-				objectPosition='left'
+				objectPosition='top'
 				placeholder='blur'
 			/>
 
-			<div className='relative h-full bg-black bg-opacity-80 '>
+			<div className='relative h-full bg-black bg-opacity-70 '>
 				<motion.div
 					className='grid place-items-center h-full'
 					initial={{ opacity: 0 }}
