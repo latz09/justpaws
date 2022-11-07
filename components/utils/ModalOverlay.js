@@ -28,7 +28,7 @@ const ModalOverlay = ({ children, setModalIsOpen }) => {
 				className='fixed top-0 left-0 w-full h-full  z-10 bg-black bg-opacity-80 backdrop-blur'
 			>
 				<div
-					className='text-3xl	grid place-items-center text-white font-semibold tracking-widest p-4 cursor-pointer'
+					className='text-3xl	grid place-items-center text-white font-semibold tracking-widest pt-4 cursor-pointer'
 					onClick={() => {
 						setModalIsOpen(false);
 					}}
