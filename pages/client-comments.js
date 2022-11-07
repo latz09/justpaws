@@ -1,9 +1,12 @@
 import { comments } from '../data/comments';
 import Comment from '../components/Testimonials/Comment';
 import AllComments from '../components/Testimonials/AllComments';
+import TestimonialComponent from '../components/Testimonials/TestimonialComponent';
+import TestimonialsHero from '../components/layout/heros/TestimonialsHero';
 const ClientComments = () => {
 	return (
-		<div className="py-14 gap-8">
+		<div className='grid'>
+			<TestimonialsHero />
 			<AllComments data={comments} />
 		</div>
 	);
