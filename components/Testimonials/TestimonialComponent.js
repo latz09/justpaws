@@ -5,7 +5,7 @@ const TestimonialComponent = () => {
 	const firstFourComments = comments.slice(0, 4);
 
 	return (
-		<div className=' grid place-items-center gap-8'>
+		<div className=' grid place-items-center gap-10 my-8'>
 			<motion.h1
 				className='text-4xl text-center'
 				initial={{ opacity: 1, scale: 1 }}
@@ -16,14 +16,14 @@ const TestimonialComponent = () => {
 			</motion.h1>
 		
 				<motion.div
-					className='max-w-7xl hidde mx-auto flex flex-wrap flex-auto space-y-2'
+					className='max-w-7xl mx-auto grid gap-12 lg:grid-cols-2 px-2'
 					initial={{ opacity: 0, scale: 0.2 }}
 					whileInView={{ opacity: 1, scale: 1, once: true }}
 					transition={{ delay: .4, duration: 1.6 }}
 				
 				>
 					{firstFourComments.map((comment) => (
-						<div key={comment.id} className='w-full md:w-1/2'>
+						<div key={comment.id} className='w-full border-b border-primary border-opacity-30 '>
 							<Comment text={comment.comment} name={comment.name} />
 						</div>
 					))}

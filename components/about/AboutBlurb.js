@@ -5,7 +5,7 @@ import SlideInContainer from '../utils/animations/SlideInContainer';
 
 const AboutBlurb = () => {
 	return (
-		<div className='max-w-4xl mx-auto text-lg md:text-2xl md:leading-9 tracking-wide text-justify grid px-3 font-normal text-darkblue/80 leading-8'>
+		<div className='max-w-4xl mx-auto text-lg md:text-2xl md:leading-9 tracking-wide text-justify grid px-3 font-normal text-darkblue/80 leading-8 '>
 			<p className='grid gap-3 font-primary'>
 				<span>
 					Welcome to <span className="text-primary font-semibold"> JUST PAWS PET SALON </span> a friendly family-owned

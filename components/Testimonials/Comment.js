@@ -3,26 +3,27 @@ import { motion } from 'framer-motion';
 
 const Comment = ({ text, name }) => {
 	return (
-		<div className='font-primary font-normal tracking-wider p-4 grid gap-2 md:gap-4 mx-4 place-items-end'>
-			<div className='flex justify-between items-center space-x-3 md:space-x-4 w-full '>
+		<div className='font-primary font-normal tracking-wider grid gap-2 py-8'>
+			<div className='grid grid-cols-8 items-center'>
+				{/* BsChatQuote */}
 				<motion.div
-					initial={{ scale: .98 }}
+					initial={{ scale: 0.98 }}
 					animate={{ scale: 1.19 }}
 					transition={{
 						duration: 1,
 						repeat: Infinity,
 						repeatType: 'reverse',
 					}}
-					className=' text-primary text-xl justify-self-start'
+					className=' text-primary text-xl place-self-center'
 				>
-					<div className="">
+					<div className='p-2'>
 						{' '}
 						<BsChatQuote />{' '}
 					</div>
 				</motion.div>
-				<span className='pl-4 md:pl-2 md:text-right'>{text}</span>
+				<span className='col-span-7 '>{text}</span>
 			</div>
-			<div className='place-self-end text-primary font-bold'>-{name}</div>
+			<span className=' text-primary place-self-end font-bold'>-{name}</span>
 		</div>
 	);
 };

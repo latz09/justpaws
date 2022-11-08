@@ -5,7 +5,7 @@ import TestimonialComponent from '../components/Testimonials/TestimonialComponen
 import TestimonialsHero from '../components/layout/heros/TestimonialsHero';
 const ClientComments = () => {
 	return (
-		<div className='grid'>
+		<div className='grid gap-6 mb-8'>
 			<TestimonialsHero />
 			<AllComments data={comments} />
 		</div>
